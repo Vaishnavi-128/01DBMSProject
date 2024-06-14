@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>विवाह दाखला</title>
+    <style>
+     body{
+        background-color:white	;
+       }
+          h1{
+    color:#643b9f;
+    font-family:"Times Roman";
+    font-size: 50px; 
+    text-align:center;
+    margin: 50px 40px;
+  }
+  
+        
+        /* form container */
+  form {
+    max-width: 600px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 35px;
+    border: 1px solid #643b9f;
+    border-radius: 10px;
+  }
+  
+  /* form fields */
+  label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+    color:#643b9f;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #643b9f;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* form buttons */
+  input[type="submit"] {
+    background-color: #643b9f;
+    color: #fff;
+    float:right;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 600px) {
+    h1{
+    color:#643b9f;
+    font-family:"Times Roman";
+    font-size: 25px; 
+    text-align:center;
+    margin: 30px 40px;
+  }
+
+  }
+    </style>
+  </head>
+  <body>
+    <h1>विवाह दाखला</h1>
+    <form action="Marriage1.php" method="post">
+      <label for="office">विवाह नोंदणी कार्यालय : </label>
+      <input type="text" id="office" name="office" required><br><br>
+      <label for="taluka">तालुका : </label>
+      <input type="text" id="taluka" name="taluka" required><br><br>
+      <label for="District">जिल्हा : </label>
+      <input type="text" id="District" name="District" required><br><br>
+       <label for="Date">विवाह दिनांक : </label>
+      <input type="date" id="date" name="date" required><br><br>
+       <label for="Name">पतीचे नाव : </label>
+      <input type="text" id="Name" name="Name" required><br><br>
+      <label for="Name2">पत्नीचे नाव : </label>
+      <input type="text" id="Name2" name="Name2" required><br><br>
+      <label for="Adhar1">पतीचा आधार कार्ड क्रमांक : </label>
+      <input type="text" id="Adhar1" name="Adhar1" required><br><br>
+      <label for="Adhar2">पत्नीचा आधार कार्ड क्रमांक : </label>
+      <input type="text" id="Adhar2" name="Adhar2" required><br><br>
+      <label for="Place">ठिकाण : </label>
+      <input type="text" id="Place" name="Place" required><br><br>
+      <button type="button" value="Go back!" onclick="history.back()"style="background-color:#e2d6f2;font-family: 'Times New Roman'; color:#643b9f; padding: 10px 30px;font-size: 18px;border: none;border-radius: 5px;">मागे जा</button>
+      <input type="submit" value="प्रमाणपत्र तयार करा">
+    </form>
+     
+  </body>
+</html>

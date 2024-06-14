@@ -1,0 +1,10 @@
+<!-- Add this code where you want the Google Translate widget to appear -->
+<div id="google_translate_element"></div>
+
+<!-- Add this code to load the Google Translate API -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

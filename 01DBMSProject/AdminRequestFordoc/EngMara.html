@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+
+body {
+  background-color: white; /* white */
+  animation-name: background-pulse;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes background-pulse {
+  0% {
+    background-position: center;
+  }
+  50% {
+    background-position: bottom;
+  }
+  100% {
+    background-position: center;
+  }
+}
+
+h1{
+  color:#643b9f;
+  font-family:"Times Roman";
+  font-size: 50px; 
+  text-align:center;
+  margin: 50px 40px;
+}
+
+
+
+        button {
+  background-color: #643b9f; /* Green background color */
+  border: none; /* Remove button border */
+  color: white; /* White text color */
+  padding: 20px 40px; /* Padding around text */
+  text-align: center; /* Center text horizontally */
+  text-decoration: none; /* Remove text underline */
+  display: inline-block; /* Display as a block element */
+  font-size: 30px; /* Font size */
+  font-family:"Segoe UI";
+  margin: 100px 120px; /* Add some margin */
+  cursor: pointer; /* Add pointer cursor on hover */
+  border-radius: 8px; /* Add some rounding to the corners */
+  box-shadow: 2px 2px 4px #4f4f4f; /* Add a small shadow */
+}
+
+button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+
+button:active {
+  background-color: #2d6827; /* Even darker green on click */
+  box-shadow: none; /* Remove shadow on click */
+}
+
+    </style>
+</head>
+
+<body>
+    <h1>You are the resident of Veet,karmala</h1>
+  <h1>Choose Language To Genarate The Document</h1>
+  <button type="button" value="Go back!" onclick="history.back()">Back</button>
+<button onclick="window.location.href='03Marathi/MarathiAllDoc.php'">Marathi</button>
+<button onclick="window.location.href='alldoc.php'">English</button>
+
+
+
+
+    
+</body>
+</html>
